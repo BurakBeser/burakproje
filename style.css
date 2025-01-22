@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+   
+    background-image: url(https://www.fotopedi.org/wp-content/uploads/2016/04/manzara-fotografi.jpg);
+    height: 100vh;
+    background-size: 100% 100%;
+    
+}
+
+.container .navbar{
+    width: 100%;
+    height: 80px;
+    background: rgba(22, 112, 214, 0.4);
+}
+
+.navbar .logo{
+    display: inline-block;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.navbar .logo a{
+    text-decoration: none;
+    font-size: 30px;
+    font-family: sans-serif;
+    color: #f3f3f3;
+
+}
+
+.navbar ul{
+    float: right;
+    margin-right: 20px;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 8px;
+    line-height: 80px;
+}
+
+.navbar ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 6px 13px;
+    font-family: Roboto;
+}
+
+.navbar ul li a.active,
+.navbar ul li a:hover{
+    background-color: #ff6e00;
+    border-radius: 20px;
+}
+
+.container .center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: sans-serif;
+    user-select: none;
+
+}
+
+.center h1{
+    color: black;
+    font-size: 70px;
+    font-weight: bold;
+    width: 900px;
+    text-align: center;
+}
+.center h2{
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    width: 885px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.box{
+    width: 800px;
+    height: 750px;
+    background: rgba(22, 112, 214, 0.4);
+    padding: 40;
+    border-radius: 30%;
+    text-align: center;
+    margin: auto;
+    margin-top: 2%;
+    color: white;
+    font-family: Roboto;
+}
+.box img{
+    border-radius: 30%;
+    width: 500px;
+    height: 600px;
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+.box img:hover{
+    transform: scale(0.9);
+}
+
+.box h1{
+    font-size: 50px;
+    letter-spacing: 4px;
+}
+.box h3{
+    font-size: 20px;
+}
+
+.box1{
+    padding-top: 40px;
+    width: 700px;
+    height: 500px;
+    background: rgba(22, 112, 214, 0.4);
+    border-radius: 30%;
+    text-align: center;
+    margin: auto;
+    margin-top: 2%;
+    color: white;
+    font-family: Roboto;
+}
+
+.box1 h1{
+    margin-top: 3%;
+    font-size: 60px;
+    letter-spacing: 15px;
+}
+
+.timeline {
+    position: relative;
+    width: 90%;
+    height: 300px;
+    margin:0 auto;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.event {
+    position: absolute;
+    width: 120px;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.event::before {
+    content: '#';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: #333;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.event div {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#ilkokul {
+    top: 5%;
+    left: 15%;
+    background-color: #ffcc00;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#ortaokul {
+    top: 25%;
+    left: 35%;
+    background-color: #4caf50;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#lise {
+    top: 45%;
+    left: 55%;
+    background-color: #2196f3;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#universite {
+    top: 65%;
+    left: 75%;
+    background-color: #f44336;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.star-icon {
+    position: absolute; /* Sayfa kaydırıldıkça sabit kalsın */
+    top: 250px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;      /* SVG genişliği */
+    height: 100px;     /* SVG yüksekliği */
+    fill: yellow;     /* Yıldız rengini sarı yapıyoruz */
+    cursor: pointer;  /* Üzerine gelince tıklanabilir işareti */
+}
+
+.star-icon:hover {
+    fill: gold;       /* Hover efektinde rengi değiştir */
+    transform: translateX(-50%) scale(1.1); /* Hoverda biraz büyümesi için */
+    transition: transform 0.3s ease, fill 0.3s ease; /* Yumuşak geçiş efektleri */
+}
+.kayit{
+    margin-top: 400px;
+}
+.movie-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.movie-item {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 15px;
+    width: 300px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.movie-item img {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+
+.movie-item h3 {
+    margin: 10px 0;
+}
+.header-section {
+    text-align: center;
+    margin: auto;
+    margin-top: 2%;
+    
+}
+.header-section h1 {
+    font-size: 4rem; /* Başlık boyutunu büyütür */
+    font-weight: bold; /* Başlığı kalın yapar */
+    margin-bottom: 20px; /* Başlık ile film listesi arasında boşluk bırakır */
+}
