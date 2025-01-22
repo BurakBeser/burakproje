@@ -261,3 +261,21 @@
     font-weight: bold; /* Başlığı kalın yapar */
     margin-bottom: 20px; /* Başlık ile film listesi arasında boşluk bırakır */
 }
+
+.notification {
+    position: fixed;
+    top: 50%;
+    left: -300px;
+    transform: translateY(-50%);
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    /* Custom cubic-bezier curve: starts fast, slows in middle, accelerates at end */
+    transition: left 3s cubic-bezier(0.01, 0.1, 1, 1);
+    z-index: 1000;
+}
+
+.notification.show {
+    left: calc(100% + 300px);
+}
